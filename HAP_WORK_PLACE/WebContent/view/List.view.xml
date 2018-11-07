@@ -1,0 +1,18 @@
+<mvc:View
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	controllerName="hapwp.controller.List">
+	
+	<Page
+		showNavButton="true"
+		navButtonPress="onNavButton">
+		<core:ComponentContainer
+			name="haplist"
+			prapagateModel="true"
+			settings='"{transfer>/params}"'
+			propagateModel="true">	
+		</core:ComponentContainer>
+	</Page>
+	
+</mvc:View>

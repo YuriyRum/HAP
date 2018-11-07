@@ -1,0 +1,22 @@
+<mvc:View
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:hapwp="hapwp.control"
+	controllerName="hapwp.controller.WorkPlace">
+	<App id="hapwp_app">
+		<pages>
+			<Page title="{i18n>pageTitle}">
+				<content>
+					<hapwp:TileContainer
+						tiles="{/services}">
+						<hapwp:StandardTile
+							title="{title}"
+							number="{number}"
+							config="{config}"
+							press="onTilePress"/>
+					</hapwp:TileContainer>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
